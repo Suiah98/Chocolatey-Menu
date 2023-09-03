@@ -1,6 +1,7 @@
 # 🍫 Chocolatey Menu
 ## 📋 Description
-Chocolatey Menu is a PowerShell script initially created to facilitate my work in IT. Its main objective is to simplify and speed up the mass installation of applications using Chocolatey on Windows systems. This intuitive menu helps users effortlessly select apps to install, update, or delete.
+Chocolatey Menu is a PowerShell script initially created to facilitate my work in IT. Its main objective is to simplify and speed up the mass installation of applications using [Chocolatey](https://chocolatey.org/)
+ on Windows systems. This intuitive menu helps users effortlessly select apps to install, update, or delete.
 
 ## 🌟 Features
 - 🍫 Chocolatey Check & Install: Checks and installs Chocolatey if not already present on the system.
