@@ -21,4 +21,4 @@ Chocolatey Menu is a PowerShell script initially created to facilitate my work i
     - S. Exit the menu.
 
 ## 🔗 Sample Applications List
-In the provided script, applications like "googlechrome" and "vscode" are merely examples. Feel free to extend, replace, or customize this list according to your requirements. Add more apps to the $global:apps list in the script as needed.
+In the provided script, applications like "googlechrome" and "vscode" are mere examples. Feel free to expand, replace or customize this list to your needs. Add more apps to the $global:apps list in the script as needed, you can check the list of apps in [Chocolatey Packages](https://community.chocolatey.org/packages)
