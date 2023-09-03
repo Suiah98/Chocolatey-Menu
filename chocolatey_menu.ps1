@@ -169,8 +169,8 @@ Function UpdateAllChocolateyApps {
 
 # Function to update the script if there's a new version
 Function UpdateToLatestVersion {
-    $scriptUrl = "https://raw.githubusercontent.com/Suiah98/Chocolatey-Menu/main/Chocolatey_Menu.ps1"
-    $localPath = $PSScriptRoot + "\Chocolatey_Menu.ps1"
+    $scriptUrl = "https://raw.githubusercontent.com/Suiah98/Chocolatey-Menu/main/chocolatey_menu.ps1"
+    $localPath = $PSScriptRoot + "\chocolatey_menu.ps1"
 
     # Download the new script
     Invoke-WebRequest -Uri $scriptUrl -OutFile $localPath
