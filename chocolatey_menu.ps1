@@ -78,13 +78,33 @@
 $Menu_Version = "Ver.03.09.2023"
 
 # Function that displays random inspirational quotes
-Function Get-InspirationalQuote {
-    $quotes = @(
-        "tdfthggfdhfg",   # Replace with actual inspirational quotes
-        "gtfhgfh"         # Replace with actual inspirational quotes
+Function Get-ChocolateDessert {
+    $desserts = @(
+        "Chocolate Molten Lava Cake",
+        "Chocolate Brownies",
+        "Chocolate Truffles",
+        "Chocolate Mousse",
+        "Chocolate Fondue",
+        "Chocolate Ganache Tart",
+        "Chocolate Chip Cookies",
+        "Chocolate Pudding",
+        "Chocolate Soufflé",
+        "Chocolate Gelato",
+        "Chocolate Torte",
+        "Chocolate Eclairs",
+        "Chocolate-covered Strawberries",
+        "Chocolate Biscotti",
+        "Chocolate Macarons",
+        "Chocolate Cheesecake",
+        "Chocolate Creme Brulee",
+        "Chocolate Panna Cotta",
+        "Chocolate Tiramisu",
+        "Chocolate Swiss Roll"
     )
-    return $quotes | Get-Random
+    return $desserts | Get-Random
 }
+
+
 
 # Function that checks if Chocolatey is installed and installs if necessary
 Function Ensure-ChocolateyInstalled {
@@ -104,7 +124,7 @@ Function ShowMenu {
     Write-Host "------------------------------"
     Write-Host "Chocolatey Menu by Suian -" $Menu_Version
     Write-Host "------------------------------"
-    Write-Host "$(Get-InspirationalQuote)"
+    Write-Host "$(Get-ChocolateDessert)"
     Write-Host "------------------------------"
     Write-Host "Select the applications you want to install by marking with 'x'"
     Write-Host "                              "
@@ -150,7 +170,7 @@ Function UpdateAllChocolateyApps {
 # Function to update the script if there's a new version
 Function UpdateToLatestVersion {
     $scriptUrl = "https://raw.githubusercontent.com/Suiah98/Chocolatey-Menu/main/Chocolatey_Menu.ps1"
-    $localPath = $PSScriptRoot + "\Chocolatey_Menu.ps1" # Make sure to put the correct script name here
+    $localPath = $PSScriptRoot + "\Chocolatey_Menu.ps1"
 
     # Download the new script
     Invoke-WebRequest -Uri $scriptUrl -OutFile $localPath
